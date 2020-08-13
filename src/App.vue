@@ -1,25 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <router-view></router-view>
+    <MainTabBar />
+
   </div>
 </template>
 
 <script>
+import MainTabBar from 'components/content/mainTabBar/MainTabBar.vue'
 
 export default {
   name: 'App',
-  components: {
-  }
+  components: { MainTabBar }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+@import './assets/css/base.css';
 </style>
